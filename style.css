@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+* {
+     font-family: 'Inter', system-ui;
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     color: #243e63;
+}
+
+body {
+     max-width: 100vw;
+     overflow-x: hidden;
+}
+
+.row {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+
+.row-narrow {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+
+.container {
+     padding: 96px 0;
+}
+
+img {
+     width: 100%;
+}
+
+h1 {
+     font-size: 48px;
+     color: #1a202c;
+     line-height: 1.25;
+}
+
+a {
+     display: inline;
+     text-decoration: none;
+}
+
+p {
+     font-size: 20px;
+     line-height: 1.5;
+}
+
+button {
+     cursor: pointer;
+     border: none;
+}
+
+.purple {
+     color: #6415ff;
+}
+
+.row {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 12px;
+}
+
+/* 
+     NAVBAR Styling
+ */
+
+nav {
+     /* height: 200px;
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 12px; */
+
+     /* width: 100%;
+     max-width: 1000px;
+     margin: 40pxauto;
+     display: flex;
+     padding: 20px; */
+
+     display: flex;
+     padding-top: 32px;
+}
+
+.nav-row {
+     display: flex;
+     justify-content: space-between;
+     padding-top: 20px;
+}
+
+.nav-links {
+     display: flex;
+     align-items: center;
+}
+
+.nav-link {
+     margin: 0px 24px;
+}
+
+.nav-link {
+     font-size: 14px;
+     font-weight: 600;
+     letter-spacing: 0.35px;
+     border-bottom: 20px solid transparent;
+     position: relative;
+     transition: all 300ms;
+}
+
+.nav-link:hover {
+     color: white;
+}
+
+.nav-link::after {
+     content: "";
+     position: absolute;
+     left: 0px;
+     bottom: -6px;
+     height: 2px;
+     width: 100%;
+     background: #6415ff;
+     transition: all 300ms;
+     opacity: 0;
+}
+
+.nav-link:hover::after {
+     opacity: 1;
+}
+
+.nav-link-primary {
+     margin: 0;
+     padding: 10px 32px;
+     border-radius: 1000px;
+     background-color: #6415ff;
+     color: white;
+     line-height: 1.5;
+     border: none;
+     width: auto;
+     transition: all 300ms;
+}
+
+.login {
+     margin-left: 40px;
+}
+
+.nav-title {
+     color: #242424;
+     font-size: 30px;
+     font-weight: 900;
+     margin-left: 12px;
+     letter-spacing: 0.6px;
+}
+
+.btn-menu {
+     display: none;
+     background-color: transparent;
+     border: none;
+     transition: all 300ms ease;
+}
+
+.btn-menu-svg:hover {
+     filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
+}
+
+.menu {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 378px;
+     margin: 24px 16px;
+     padding: 32px;
+     background-color: white;
+     border: 1px solid rgb(229, 231, 235);
+     border-radius: 8px;
+     z-index: 4;
+     visibility: hidden;
+     opacity: 0;
+     transform: translateX(300%);
+     transition: all 300ms ease;
+}
+
+.menu-links {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.menu-link {
+     color: #1a202c;
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 1.5;
+     margin-bottom: 4px;
+     border-bottom: 2px solid transparent;
+}
+
+.menu-link-primary {
+     color: white;
+     padding: 12px 32px;
+     background: #6415ff;
+     border-radius: 500px;
+     border: none;
+}
+
+.meny-open .model {
+     visibility: visible;
+     opacity: 1;
+     transform: translateX(0);
+}
+
+.btn-menu-close {
+     position: fixed;
+     top: 24px;
+     right: 18px;
+}
+
+section {
+     padding: 0 32px;
+}
+
+/* Header */
+
+header .row {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.header-img-wrapper {
+     width: calc(100% - 41.66);
+}
+
+.header-img {
+     width: 100%;
+     max-width: 768px;
+}
+
+.header-description-para {
+     margin: 32px 0;
+}
+
+.header-email {
+     width: 100%;
+     max-width: 448px;
+     height: 70px;
+     position: relative;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+}
+
+.header-email-input {
+     width: 100%;
+     border-radius: 300px;
+     border: 2px solid rgb(229, 231, 235);
+     padding: 20px 192px 20px 32px;
+     color: rba(36, 62, 99);
+     font-size: 16px;
+     font-weight: 500;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     z-index: 1;
+     transition: border-color 300ms;
+}
+
+.header-email-input::placeholder {
+     font-size: 500;
+     color: rba(158, 170, 189);
+}
+
+.header-email-input:hover {
+     border-color: rgba(160, 174, 192);
+}
+
+.header-email-input:focus,
+.header-email-input:active {
+     outline: transparent solid 2px;
+     outline-offset: 2px;
+     border-color: rgba(100, 21, 255);
+}
+
+.header-email-btn {
+     z-index: 2;
+     margin: 8px;
+     height: calc(100% - 16px);
+     border-radius: 100px;
+     width: 160px;
+     background-color: #6415ff;
+     color: white;
+     font-size: 15px;
+     transition: all 300ms;
+     border: none;
+}
+
+.header-email-btn:hover {
+     background-color: rgba(60, 13, 153);
+}
+
+.header-customers-title {
+     margin-top: 80px;
+     color: #a0aec0;
+     font-size: 15px;
+     font-weight: 700;
+     letter-spacing: 0.6px;
+}
+
+header {
+     position: relative;
+}
+
+/* features */
+
+#features {
+     position: relative;
+}
+
+#features .row-narrow {
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+}
+
+#features .seaction-para {
+     text-align: center;
+     max-width: 576px;
+}
+
+.features {
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 40px;
+}
+
+.feature {
+     width: calc(100% / 3);
+}
+
+.feature-row {
+     display: flex;
+     align-items: flex-start;
+     padding: 32px 24px;
+}
+
+.feature-img-wrapper {
+     display: flex;
+     padding: 20px;
+     border: 1px solid #e5e7eb;
+     border-radius: 500px;
+}
+
+.feature-img {
+     width: 24px;
+     height: 24px;
+}
+
+.feature-text {
+     margin-top: 8px;
+     margin-left: 16px;
+}
+
+.feature-para {
+     margin-top: 16px;
+     font-size: 16px;
+     max-width: calc(634px / 3);
+     color: rgb(124, 139, 161);
+     line-height: 2;
+     font-weight: 500;
+}

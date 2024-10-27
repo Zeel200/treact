@@ -449,3 +449,82 @@ header {
 .quality-img {
      z-index: 1;
 }
+
+/* steps */
+
+#steps .row {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.steps-descrtion,
+.steps-img-wrapper {
+     width: 50%;
+}
+
+.steps-img-wrapper {
+     display: flex;
+     position: relative;
+}
+
+.steps-img {
+     z-index: 2;
+}
+
+.steps-description {
+     padding: 32px 0;
+     padding-left: 64px;
+}
+
+.step {
+     display: flex;
+     align-items: flex-start;
+     margin-top: 32px;
+}
+
+.step-number {
+     color: #cbd5e0;
+     font-size: 36px;
+     font-weight: 600;
+     line-height: 1;
+}
+
+#steps .section-tag {
+     text-align: left;
+}
+
+.step-description {
+     display: flex;
+     flex-direction: column;
+     margin-left: 24px;
+     min-width: 320px;
+}
+
+.step-title {
+     font-weight: 600;
+     font-size: 20px;
+     color: #243e63;
+     line-height: 1;
+}
+
+.step-para {
+     font-size: 14px;
+     color: #718096;
+     margin-top: 12px;
+     font-weight: 500;
+     line-height: 2;
+}
+
+.step-grid {
+     position: absolute;
+     opacity: 0.15;
+     right: 0;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+     width: 80px;
+     height: 80px;
+     fill: rgba(100, 21, 255);
+     z-index: 1;
+}

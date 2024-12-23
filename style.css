@@ -14,7 +14,6 @@ html {
      padding: 0;
      width: 100%;
      overflow-x: hidden;
-     overflow: auto;
 }
 
 .row {
@@ -51,6 +50,10 @@ h1 {
 
 .purple {
      color: #6415ff;
+}
+
+#github__link {
+     color: red;
 }
 
 p {
@@ -200,10 +203,6 @@ nav {
 
 .nav-link-primary:hover {
      background-color: rgba(80, 17, 204);
-}
-
-.login {
-     margin-left: 48px;
 }
 
 .btn-menu {
@@ -639,10 +638,6 @@ header {
      background-color: #feb2b2;
 }
 
-.value-img {
-     width: 20px;
-     height: 20px;
-}
 
 .value-name {
      font-size: 20px;
@@ -1452,11 +1447,8 @@ footer {
           width: 100%;
           max-width: 100%;
           overflow-wrap: break-word;
-          /* Ensures long words don't overflow */
           word-wrap: break-word;
-          /* Legacy support for break-word */
           box-sizing: border-box;
-          /* Ensure padding is included in width */
      }
 
      .values-img {
